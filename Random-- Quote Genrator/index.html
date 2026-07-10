@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Quote Generator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>
+                <i class="fa-solid fa-quote-left"></i>
+                Random Quote Generator
+            </h1>
+
+            <!-- Dark Mode Button -->
+            <button id="themeBtn" class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+        <!-- Category -->
+        <div class="category-section">
+
+            <select id="category">
+                <option value="All">All Categories</option>
+                <option value="Motivation">Motivation</option>
+                <option value="Success">Success</option>
+                <option value="Life">Life</option>
+                <option value="Love">Love</option>
+                <option value="Funny">Funny</option>
+            </select>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search quotes...">
+
+        </div>
+
+        <!-- Quote Card -->
+        <div class="quote-card">
+
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+            <p id="quote">
+                Loading Quote...
+            </p>
+
+            <h3 id="author">
+                Author
+            </h3>
+
+            <span id="quoteCount">
+                Quote 1 / 100
+            </span>
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+
+            <button id="newQuote">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                New
+            </button>
+
+            <button id="copyBtn">
+                <i class="fa-solid fa-copy"></i>
+                Copy
+            </button>
+
+            <button id="speakBtn">
+                <i class="fa-solid fa-volume-high"></i>
+                Speak
+            </button>
+
+            <button id="shareBtn">
+                <i class="fa-brands fa-x-twitter"></i>
+                Share
+            </button>
+
+            <button id="downloadBtn">
+                <i class="fa-solid fa-download"></i>
+                Image
+            </button>
+
+            <button id="favoriteBtn">
+                <i class="fa-regular fa-heart"></i>
+                Favorite
+            </button>
+
+        </div>
+
+        <!-- Auto Quote -->
+        <div class="auto-box">
+
+            <label class="switch">
+
+                <input type="checkbox" id="autoChange">
+
+                <span class="slider"></span>
+
+            </label>
+
+            <span>
+                Auto Change Every 15 Seconds
+            </span>
+
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="card">
+
+                <h2 id="favoriteCount">0</h2>
+
+                <p>Favorites</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="totalQuotes">100</h2>
+
+                <p>Total Quotes</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Toast Message -->
+    <div id="toast">
+        Quote Copied!
+    </div>
+
+    <!-- JavaScript -->
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
